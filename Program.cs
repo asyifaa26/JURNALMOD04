@@ -23,6 +23,15 @@ internal class Program
         Console.WriteLine("Kode Buah Melon: " + kodeBuah.GetKodeBuah(NamaBuah.Melon));
         Console.WriteLine("Kode Buah Semangka: " + kodeBuah.GetKodeBuah(NamaBuah.Semangka));
 
-
+        Console.WriteLine("\nState-Based Contruction Posisi Karakter Game\n");
+        PosisiKarakterGame karakter = new PosisiKarakterGame();
+        karakter.doActive(PosisiKarakterGame.tombol.TombolS);
+        karakter.doActive(PosisiKarakterGame.tombol.TombolW);
+        karakter.doActive(PosisiKarakterGame.tombol.TombolW);
+        karakter.doActive(PosisiKarakterGame.tombol.TombolS);
+        karakter.doActive(PosisiKarakterGame.tombol.TombolW);
+        karakter.doActive(PosisiKarakterGame.tombol.TombolX);
+        karakter.doActive(PosisiKarakterGame.tombol.TombolS);
+        karakter.doActive(PosisiKarakterGame.tombol.TombolW);
     }
 }
